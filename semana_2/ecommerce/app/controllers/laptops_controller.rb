@@ -1,4 +1,5 @@
 class LaptopsController < ApplicationController
+
   def index
   	@laptops = Laptop.all
   end
@@ -33,7 +34,7 @@ class LaptopsController < ApplicationController
     @laptop = Laptop.find(params[:id])
     @laptop.destroy
 
-    redirect_to root_path
+    redirect_to laptops_path
   end
 
   private

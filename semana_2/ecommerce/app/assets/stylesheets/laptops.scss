@@ -1,6 +1,7 @@
 // Place all the styles related to the laptops controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
 		background:url('white.png');
 		background-repeat: no-repeat;
@@ -68,3 +69,63 @@ body {
 		font-style: italic;
 	}
 
+	#link_add {
+		
+		width: 120px;
+		height: 35.8px;
+		background-color: #FFAE00;
+		border: 2px solid black;
+		border-radius: 2px 2px 2px;
+
+		text-align: center;
+
+		float: left;
+	}
+
+	#link_add a {
+		text-decoration: none;
+		color: blue;
+		font-weight: bold;
+
+	}
+
+	#link_add a:hover {
+		text-decoration: none;
+		color: yellow;
+		font-weight: bold;
+	}
+
+		#links_index {
+
+		width: 120px;
+		background-color: #FFAE00;
+		border: 2px solid black;
+		border-radius: 2px 2px 2px;
+
+		text-align: center;
+		float: left;
+
+		margin-left: 0.5em;
+	}
+
+	#links_index a {
+		text-decoration: none;
+		color: blue;
+		font-weight: bold;
+
+	}
+
+	#links_index a:hover {
+		text-decoration: none;
+		color: yellow;
+		font-weight: bold;
+	}
+
+	#link_container {
+		margin: auto;
+		padding: 0.5em;
+
+		height: 5%;
+		width: 20%;
+
+	}

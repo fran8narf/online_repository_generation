@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'laptops/index'
-  resources :laptops
-  root :to => "laptops#index"
+
+  get 'welcome/index'
+
+  get 'laptops/index', 'backpacks/index'
+  resources :laptops, :backpacks, :welcome
+
+  root :to => "welcome#index"
   
 end
