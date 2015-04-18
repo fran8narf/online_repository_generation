@@ -1,0 +1,36 @@
+
+<h1>Editing Laptop</h1>
+<div id="container">
+	<%= form_for :laptop, url: laptop_path(@laptop), method: :patch do |x| %>
+	<table border="1" cellspacing="0">
+				<tr>
+					<td class="title"><strong><%= x.label :brand %></strong></td>
+					<td class="parameter"><%= x.text_field :brand %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :model %></strong></td>
+					<td class="parameter"><%= x.text_field :model %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :proccessor_brand %></strong></td>
+					<td class="parameter"><%= x.text_field :proccessor_brand %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :ram %></strong></td>
+					<td class="parameter"><%= x.text_field :ram %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :price %></strong></td>
+					<td class="parameter"><%= x.text_field :price %></td>
+				</tr>
+			</table>
+
+			<p>
+				<%= x.submit %>
+			</p>
+			<% end %>
+			<p>
+				<%= link_to 'Back', laptops_path %>
+			</p>
+
+</div>

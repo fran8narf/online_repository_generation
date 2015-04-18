@@ -1,0 +1,40 @@
+<style> 
+	body {
+		background-color: #FCD895;
+	}
+
+
+</style>
+
+<h1>Showing laptop</h1>
+
+<div id="container">
+  <table id="tshow" border="1" cellspacing="0">
+     <tr>
+        <th>Brand and model</th>
+ 	      <td>
+ 		       <%= @laptop.brand %>
+ 		       <%= @laptop.model %>
+        </td>
+     </tr>
+
+     <tr>
+        <th>Proccessor</th>
+        <td><%= @laptop.proccessor_brand %></td>
+     </tr>
+
+     <tr>
+        <th>RAM</th>
+        <td><%= @laptop.ram %>GB</td>
+     </tr>
+      
+     <tr>
+        <th>Price</th>
+        <td><%= @laptop.price %></td>
+     </tr> 	
+  </table>
+</div>
+<p>
+  <%= link_to 'Edit', edit_laptop_path(@laptop) %>
+	<%= link_to 'Back', laptops_path %>
+</p>

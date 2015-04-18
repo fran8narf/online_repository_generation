@@ -1,0 +1,36 @@
+
+
+<h1>e-Commerce Laptops Listing</h1>
+<div id="container">
+	<table id="tindex" border="1" cellspacing="0">
+		<% @laptops.each do |laptop|%>
+		<tr>
+			<td>
+				<%= laptop.brand %> -
+				<%= laptop.model %> 
+			</td>
+			<td>
+				<%= link_to 'Show', laptop_path(laptop) %>
+			</td>
+			<td>
+				<%= link_to 'Edit', edit_laptop_path(laptop) %>
+			</td>
+			<td>	
+				<%= link_to 'Destroy', laptop_path(laptop), method: :delete, data: { confirm: 'Are you sure you want to delete this record?'} %>
+			</td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+
+<div id="link_container">
+
+	<div id="link_add">
+		<%= link_to 'Add new laptop', new_laptop_path %>
+	</div>
+
+	<div id="links_index">
+		<%= link_to 'Go back to the index!', root_path %>
+	</div>
+	
+</div>
