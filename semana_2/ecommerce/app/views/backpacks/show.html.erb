@@ -1,0 +1,30 @@
+
+<h1>Showing backpack</h1>
+
+<div id="container">
+  <table id="tshow" border="1" cellspacing="0">
+     <tr>
+        <th>Color</th>
+ 	      <td><%= @backpack.color %></td>
+     </tr>
+
+     <tr>
+        <th>Capacity</th>
+        <td><%= @backpack.capacity %> (litres)</td>
+     </tr>
+
+     <tr>
+        <th>Pockets</th>
+        <td><%= @backpack.pockets %></td>
+     </tr>
+      
+     <tr>
+        <th>Waterproof</th>
+        <td><%= @backpack.waterproof %></td>
+     </tr> 	
+  </table>
+</div>
+<p>
+  <%= link_to 'Edit', edit_backpack_path(@backpack) %>
+	<%= link_to 'Back', backpacks_path %>
+</p>
