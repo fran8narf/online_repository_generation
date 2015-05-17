@@ -4,13 +4,17 @@ class PostsController < ApplicationController
 	end
 
 	def new
+		@post = Post.new
 	end
 
 	def create
 		@post = Post.new(post_params)
-		@post.save
 
-		redirect_to @post #redirecciona a new post
+		if @post.save
+			redirect_to @post #redirecciona a new post también hace una petición http nueva, lo que hace perder los datos.
+		else
+			render 'new'
+		end
 	end
 
 	def show
