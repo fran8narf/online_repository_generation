@@ -15,57 +15,10 @@
  */
 body {
 	background: url("http://www.coffeeforbreakfast.com/images/futurama-wallpaper/%5B1920x1080%5D%20Planet-Express.png");
+	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Trade Winds', cursive;
-}
-
- #profile_img {
- 	height: auto;
- 	width: auto;
-
- 	max-width: 90%;
- 	max-height: 200px;
- 	border: 4px solid black;
- 	border-radius: 5px;
- }
-
- .header_title {
- 	background-color: white;
- 	text-align: center;
- 	color: white;
- 	text-shadow: 0 0 0.5em #B500D9, 0 0 1.0em #B500D9, 0 0 0.3em #B500D9,
-	0 0 0.4em #B500D9, 0 0 0.6em #B500D9, 0 0 0.8em #B500D9,
-	0 0 1.0em #B500D9;
- 	font-weight: bolder;
- 	width: 100%;
- 	margin: 0;
- 	border: 3px solid black;
- }
- #zach {
- 	margin: -3.9em -23.5em 0em 0em;
- }
-
- .users_container {
- 	border-bottom: 3px solid black;
- 	border-right: 3px solid black;
- 	border-left: 3px solid black;
- }
-
- .users_container ul li{
- 	list-style: none;
- }
-
- .users_container h2 {
- 	color: white;
- 	text-shadow: 0 0 0.5em #B500D9, 0 0 1.0em #B500D9, 0 0 0.3em #B500D9,
-	0 0 0.4em #B500D9, 0 0 0.6em #B500D9, 0 0 0.8em #B500D9,
-	0 0 1.0em #B500D9;
- }
-.users_container li {
-	color: white;
 	font-weight: bold;
 }
- .li_main {
- 	color: black;
- 	font-weight: bolder;
- }
+
+ 
