@@ -1,0 +1,17 @@
+
+<div class="container users_container">
+	<div class="row">
+		<div class="col-md-6">
+			<h2>Registered Users</h2>
+				<ul>
+					<% @users.each do |user| %>	
+						<li><span class="li_main">Name: </span class="li_main"> <%= user.name %></li>
+						<li><span class="li_main">Age: </span class="li_main"><%= user.age %></li>
+						<li><span class="li_main">Favourite food: </span class="li_main"><%= user.favourite_food %></li>
+						<li><span class="li_main">Favourite Prog. Language: </span class="li_main"><%= user.fav_prog_language %></li>
+						<br>
+					<% end %>
+				</ul>
+		</div>
+	</div>
+</div>
