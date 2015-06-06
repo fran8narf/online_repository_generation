@@ -1,0 +1,35 @@
+
+
+	<h2>Add a new backpack</h2>
+	
+	<div id="container">
+		<%= form_for @backpack do |x| %>
+			<table border="1" cellspacing="0">
+				<tr>
+					<td class="title"><strong><%= x.label :color %></strong></td>
+					<td class="parameter"><%= x.text_field :color %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :capacity %></strong></td>
+					<td class="parameter"><%= x.text_field :capacity %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :pockets %></strong></td>
+					<td class="parameter"><%= x.text_field :pockets %></td>
+				</tr>
+				<tr>
+					<td class="title"><strong><%= x.label :waterproof %></strong></td>
+					<td class="parameter"><%= x.text_field :waterproof %></td>
+				</tr>
+
+			</table>
+
+			<p>
+				<%= x.submit %>
+			</p>
+			<% end %>
+
+			<p>
+				<%= link_to 'Back', backpacks_path %>
+			</p>
+</div>
