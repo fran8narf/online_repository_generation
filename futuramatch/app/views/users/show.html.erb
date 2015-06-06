@@ -1,0 +1,53 @@
+<div class="container profile">
+	<div class="row">
+		<div class="col-md-6">
+
+	<h1><%= @user.name %>'s profile</h1>
+	<h4>Registered: <%= time_ago_in_words(@user.created_at) %> ago</h4>
+			
+	<img id="profile_img" src="<%= @user.pic %>">
+	<table border="1" cellspacing="0" cellpadding="5 ">
+		<tr>
+			<th>Name</th>
+			<td> <%= @user.name %></td>
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td><%= @user.age %></td>
+		</tr>
+		<tr>
+			<th>Favourite food</th>
+			<td><%= @user.favourite_food %></td>		
+		</tr>
+		<tr>
+			<th>Favourite Prog. Language</th>
+	     	<td><%= @user.fav_prog_language %></td>
+		</tr>
+	</table>
+		</div>
+	</div>
+</div>
+
+<br>
+
+<div class="container matches">
+	<div class="row">
+		<div class="col-md-6">
+
+			<h3>Matches:</h3>
+			<table border="1" cellspacing="0" cellpadding="5">
+				<% @users.each do |user| %>
+					<% if user.favourite_food === @user.favourite_food || user.fav_prog_language === @user.fav_prog_language %>
+						<% if user != @user %>
+							<tr>
+								<td>Name: <%= user.name%></td>
+								<td>Age: <%= user.age%></td>
+							</tr>
+						<% end %>
+					<% end %>
+				<% end %>
+			</table>
+
+		</div>
+	</div>
+</div>

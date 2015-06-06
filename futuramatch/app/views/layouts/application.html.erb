@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Futuramatch</title>
+  			<%= stylesheet_link_tag    'application', media: 'all'%>
+  			<%= javascript_include_tag 'application'%>
+  	  		<%= csrf_meta_tags %>
+  	  		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+  	  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	</head>
+
+<body>
+<div class="container header_title">
+  <div class="row">
+    <div class="col-md-12"></div>
+      <h1>Futuramatch</h1>
+      <img id="zach" src="../images/zach.png" height="75" width="115">
+    </div>
+</div>
+	<%= yield %>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
