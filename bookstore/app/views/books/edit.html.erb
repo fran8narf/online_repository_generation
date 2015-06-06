@@ -1,0 +1,25 @@
+<%= form_for @book do |b| %>
+	<% if @book.errors.any? %>
+		<h3> <%= pluralize(@book.errors.count, "error") %> errors found</h3>
+		<ul>
+			<% @book.errors.full_messages.each do |msg| %>
+			<li> <%= msg %></li>
+			<% end %>
+		</ul>
+	<% end %>
+	<p>
+		<%= b.label :name %><br>
+		<%= b.text_field :name %>
+	</p>
+
+	<p>
+		<%= b.label :price %><br>
+		<%= b.text_field :price %>
+	</p>
+
+	<p>
+		<%= b.label :description %><br>
+		<%= b.text_area :description %>
+	</p>
+	<%= b.submit %>
+<% end %>

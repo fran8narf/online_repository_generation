@@ -1,0 +1,21 @@
+<h1><%= @book.name %> <h3>Added: <%= time_ago_in_words(@book.created_at) %> ago</h3> </h1>
+
+<p> Price: <%= @book.price  %>€</p>
+
+<p> 
+	Description: <br>
+	<%= @book.description %>
+</p>
+
+<%= link_to 'Edit file', edit_book_path(@book) %>
+<%= link_to 'Add book', new_book_path %><br>
+<%= link_to 'Delete file', book_path(@book), method: :delete, data: { confirm: "Delete file?"} %>
+<%= link_to 'Back', books_path %>
+
+<h2>Rates: <%= @book.rates.count %></h2>
+<%= render @book.rates %>
+
+
+<h2>Rate this book</h2>
+<%= render "rates/form"%>
+

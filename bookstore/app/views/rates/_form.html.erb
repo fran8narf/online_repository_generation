@@ -1,0 +1,12 @@
+<%= form_for ([@book, @book.rates.build]) do |n|%>
+	<p>
+		<%= n.label :name %><br>
+		<%= n.text_field :name %> <br>
+	</p>
+
+	<p>
+		<%= n.label :rating %><br>
+		<%= n.text_field :rating %> <br>
+	</p>
+	<%= n.submit %>
+<% end %>
